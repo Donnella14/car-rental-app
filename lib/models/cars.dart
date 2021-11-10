@@ -24,7 +24,7 @@ CarsList allCars = CarsList(cars:[
   CarItem(
     title: 'Honda Civic 2018',
     price:123,
-    color: 'Dark Grey',
+    color: 'Grey',
     gearbox: '4',
     fuel:'4L',
     brand:'Honda',
@@ -35,18 +35,62 @@ CarsList allCars = CarsList(cars:[
   CarItem(
     title: 'Mercedes Benz SLS 2019',
     price:203,
-    color: 'Ruby Red',
+    color: 'Red',
     gearbox: '5',
     fuel:'6L',
     brand:'Mercedes',
-    path: 'assets/1.jpg'
+    path: 'assets/2.jpg'
     
 
   ),
   CarItem(
     title: 'Land Rover Evoque 2016',
     price:223,
-    color: 'Dark Grey',
+    color: 'Grey',
+    gearbox: '6',
+    fuel:'19L',
+    brand:'Land Rover',
+    path: 'assets/1.jpg'
+    
+
+  ),
+  CarItem(
+    title: 'Audi A6 2018',
+    price:223,
+    color: 'Grey',
+    gearbox: '6',
+    fuel:'19L',
+    brand:'Land Rover',
+    path: 'assets/3.jpg'
+    
+
+  ),
+  CarItem(
+    title: 'BMW E-1 2018',
+    price:223,
+    color: 'Black',
+    gearbox: '6',
+    fuel:'19L',
+    brand:'BMW',
+    path: 'assets/5.jpg'
+    
+
+  ),
+  CarItem(
+    title: 'Jaguar XF 2019',
+    price:203,
+    color: 'Red',
+    gearbox: '6',
+    fuel:'19L',
+    brand:'Jaguar',
+    path: 'assets/3.jpg'
+    
+
+  ),
+  CarItem(
+    title: 'Land Rover Evoque 2016',
+    price:223,
+    color: 'Grey',
     gearbox: '6',
     fuel:'19L',
     brand:'Land Rover',
@@ -57,51 +101,7 @@ CarsList allCars = CarsList(cars:[
   CarItem(
     title: 'Land Rover Evoque 2016',
     price:223,
-    color: 'Dark Grey',
-    gearbox: '6',
-    fuel:'19L',
-    brand:'Land Rover',
-    path: 'assets/1.jpg'
-    
-
-  ),
-  CarItem(
-    title: 'Land Rover Evoque 2016',
-    price:223,
-    color: 'Dark Grey',
-    gearbox: '6',
-    fuel:'19L',
-    brand:'Land Rover',
-    path: 'assets/1.jpg'
-    
-
-  ),
-  CarItem(
-    title: 'Land Rover Evoque 2016',
-    price:223,
-    color: 'Dark Grey',
-    gearbox: '6',
-    fuel:'19L',
-    brand:'Land Rover',
-    path: 'assets/1.jpg'
-    
-
-  ),
-  CarItem(
-    title: 'Land Rover Evoque 2016',
-    price:223,
-    color: 'Dark Grey',
-    gearbox: '6',
-    fuel:'19L',
-    brand:'Land Rover',
-    path: 'assets/1.jpg'
-    
-
-  ),
-  CarItem(
-    title: 'Land Rover Evoque 2016',
-    price:223,
-    color: 'Dark Grey',
+    color: 'Grey',
     gearbox: '6',
     fuel:'19L',
     brand:'Land Rover',

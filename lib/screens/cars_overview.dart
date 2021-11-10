@@ -17,9 +17,16 @@ class CarsOverviewScreen extends StatelessWidget {
           'okCar',style: SubHeading),
       ),
       body: ListView(
-        children: [Text('Available Cars', 
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text('Available Cars', 
         style: MainHeading),
-        CarsGrid()
+          ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: CarsGrid(),
+        )
         ],
       ),
     );
