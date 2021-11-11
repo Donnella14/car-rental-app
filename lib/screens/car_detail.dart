@@ -26,9 +26,9 @@ class CarDetail extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey[200],
+        backgroundColor: Colors.grey[300],
         iconTheme: IconThemeData(
-    color: Colors.blue, //change your color here
+    color: Colors.green[400], //change your color here
   ),
         elevation: 0,
         actions: [
