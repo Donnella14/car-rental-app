@@ -44,13 +44,13 @@ CarsList allCars = CarsList(cars:[
 
   ),
   CarItem(
-    title: 'Land Rover Evoque 2016',
+    title: 'Range Rover Evo 2016',
     price:223,
-    color: 'Grey',
+    color: 'White',
     gearbox: '6',
     fuel:'19L',
-    brand:'Land Rover',
-    path: 'assets/1.jpg'
+    brand:'Range Rover',
+    path: 'assets/Rangew.jpg'
     
 
   ),
@@ -99,13 +99,13 @@ CarsList allCars = CarsList(cars:[
 
   ),
   CarItem(
-    title: 'Land Rover Evoque 2016',
+    title: 'Transpo 2018',
     price:223,
-    color: 'Grey',
+    color: 'Blue',
     gearbox: '6',
     fuel:'19L',
-    brand:'Land Rover',
-    path: 'assets/1.jpg'
+    brand:'Rover',
+    path: 'assets/car.jpg'
     
 
   ),

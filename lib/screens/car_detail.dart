@@ -27,6 +27,9 @@ class CarDetail extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.grey[200],
+        iconTheme: IconThemeData(
+    color: Colors.blue, //change your color here
+  ),
         elevation: 0,
         actions: [
           IconButton(

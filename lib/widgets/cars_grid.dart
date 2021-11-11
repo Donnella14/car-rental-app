@@ -24,23 +24,26 @@ class CarsGrid extends StatelessWidget {
               color: Theme.of(context).primaryColor,
               boxShadow:[BoxShadow(color: Colors.black26,blurRadius: 10,spreadRadius: 1)]
             ),
-            child: Column(
-              children: [
-                Hero(
-                  tag: allCars.cars[i].title,
-                  child: Image.asset(allCars.cars[i].path)),
-                Text(allCars.cars[i].title,
-                style: BasicHeading,
-                ),
-                Text((allCars.cars[i].price).toString(),
-                style: SubHeading),
-                Text('per month')
-              ],
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Hero(
+                    tag: allCars.cars[i].title,
+                    child: Image.asset(allCars.cars[i].path)),
+                  Text(allCars.cars[i].title,
+                  style: BasicHeading,
+                  ),
+                  Text((allCars.cars[i].price).toString(),
+                  style: SubHeading),
+                  Text('per month')
+                ],
+              ),
             ),
           ),
         ),
       ),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+      
 
     );
   }
