@@ -15,6 +15,8 @@ class CarsOverviewScreen extends StatelessWidget {
         elevation: 0,
         title: Text(
           'DidiCar',style: SubHeading),
+        backgroundColor: Colors.green[400],
+        
       ),
       body: ListView(
         children: [
