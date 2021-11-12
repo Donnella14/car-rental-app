@@ -220,7 +220,7 @@ class Login extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text('New to spotify?',
+              Text('New to DidiCar?',
               style: TextStyle(fontFamily: 'Montserrat'),
               ),
               SizedBox(width: 5.0),
