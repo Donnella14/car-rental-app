@@ -16,6 +16,17 @@ class CardItem {
 
     
   }
+  class CircleItem {
+    final String urlImage;
+    final String title;
+
+    const CircleItem({
+      required this.urlImage,
+      required this.title,
+    });
+
+    
+  }
 class CarsOverviewScreen extends StatelessWidget {
   // const ({ Key? key }) : super(key: key);
   
@@ -41,6 +52,28 @@ class CarsOverviewScreen extends StatelessWidget {
       title: 'Categoryy',
     ),
   ];
+  // List<CircleItem> itemss =[
+  //   CircleItem(
+  //     urlImage:
+  //       'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
+  //     title: 'Categoryy',
+  //   ),
+  //   CircleItem(
+  //     urlImage:
+  //       'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
+  //     title: 'Categoryy',
+  //   ),
+  //   CircleItem(
+  //     urlImage:
+  //       'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
+  //     title: 'Categoryy',
+  //   ),
+  //   CircleItem(
+  //     urlImage:
+  //       'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
+  //     title: 'Categoryy',
+  //   ),
+  // ];
 
   @override
   Widget build(BuildContext context) {
@@ -52,6 +85,15 @@ class CarsOverviewScreen extends StatelessWidget {
   'https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=1352&q=80',
   'https://images.unsplash.com/photo-1519985176271-adb1088fa94c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0c8d632e977f94e5d312d9893258f59&auto=format&fit=crop&w=1355&q=80'
 ];
+// List<String> circleList = [
+//   'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
+//   'https://images.unsplash.com/photo-1522205408450-add114ad53fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=368f45b0888aeb0b7b08e3a1084d3ede&auto=format&fit=crop&w=1950&q=80',
+//   'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=94a1e718d89ca60a6337a6008341ca50&auto=format&fit=crop&w=1950&q=80',
+//   'https://images.unsplash.com/photo-1523205771623-e0faa4d2813d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=89719a0d55dd05e2deae4120227e6efc&auto=format&fit=crop&w=1953&q=80',
+//   'https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=1352&q=80',
+//   'https://images.unsplash.com/photo-1519985176271-adb1088fa94c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0c8d632e977f94e5d312d9893258f59&auto=format&fit=crop&w=1355&q=80'
+// ];
+
 final List<Widget> imageSliders = imgList
     .map((item) => Container(
           child: Container(
@@ -152,12 +194,28 @@ final List<Widget> imageSliders = imgList
     
   }
   Widget buildCard({required List<CardItem> items}) => Container(
-      width: 200,
-      height: 200,
-      color: Colors.green,
+      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+      width: 170,
+      height: 10,
+      color: Colors.white,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image.asset('3.jpg'),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              CircleAvatar( backgroundImage: NetworkImage('https://media.istockphoto.com/photos/illustration-of-generic-red-car-front-view-picture-id1145720458?k=20&m=1145720458&s=612x612&w=0&h=51ooOfUOao-3k9MJdmqsoEITBgdMQjdEdG35sczCgJs='),
+              // CircleAvatar(
+              //   radius: 30.0,
+              //   backgroundImage:
+              //       NetworkImage("${snapshot.data.hitsList[index].previewUrl}"),
+              //   backgroundColor: Colors.transparent,
+              // )
+
+              )
+            ],
+          ),
           SizedBox(height: 4),
           Text('Category 1',
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),)

@@ -1,3 +1,4 @@
+import 'package:carrentalapp/authentication/registration.dart';
 import 'package:carrentalapp/screens/login.dart';
 import 'package:flutter/material.dart';
 import 'screens/cars_overview.dart';
@@ -20,11 +21,12 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.green[400]
       ),
       
-      home: Login(),
+      home: RegistrationScreen(),
       routes: <String, WidgetBuilder> {
-        '/login': (BuildContext context) => new Login(),
+        '/registration' : (BuildContext context) => new RegistrationScreen(),
+       // '/login': (BuildContext context) => new Login(),
         '/cars': (BuildContext context) => new CarsOverviewScreen(),
-        '/signup': (BuildContext context) => new SignupPage(),
+        // '/signup': (BuildContext context) => new SignupPage(),
         '/main': (BuildContext context) => new MyApp(),
 
       },
