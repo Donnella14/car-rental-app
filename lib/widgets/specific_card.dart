@@ -18,11 +18,12 @@ class SpecificsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      //borderRadius: BorderRadius.all(Radius.circular(5.0)),
       padding: EdgeInsets.all(8),
       height:price==0?65:100,
       width: 100,
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.grey,width: 1),
+        border: Border.all(color: Color(0xFF00512D),width: 1),
         borderRadius: BorderRadius.circular(10)
       ),
       child: price==0?Column(

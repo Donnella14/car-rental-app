@@ -28,7 +28,7 @@ class CarDetail extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.grey[300],
         iconTheme: IconThemeData(
-    color: Colors.green[400], //change your color here
+    color: Color(0xFF00512D), //change your color here
   ),
         elevation: 0,
         actions: [
