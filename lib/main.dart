@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'screens/cars_overview.dart';
 import 'screens/login.dart';
 import 'package:carrentalapp/screens/signup.dart';
+// import 'package:carrentalapp/widgets/circle_list_item.dart';
+// import 'package:carrentalapp/widgets/card_list_item.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'DidiCar',
       theme: ThemeData(
         primaryColor: Colors.white,
-        accentColor: Colors.green[400]
+        accentColor: Color(0xFF00512D)
       ),
       
       home: RegistrationScreen(),

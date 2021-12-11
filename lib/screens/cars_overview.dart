@@ -4,6 +4,10 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:carrentalapp/utils/utils.dart';
 import 'package:flutter/material.dart';
 import '../widgets/cars_grid.dart';
+import 'package:carrentalapp/widgets/circle_list_item.dart';
+//import 'package:carrentalapp/widgets/card_list_item.dart';
+
+
 
 class CardItem {
     final String urlImage;
@@ -16,17 +20,17 @@ class CardItem {
 
     
   }
-  class CircleItem {
-    final String urlImage;
-    final String title;
+  // class CircleItem {
+  //   final String urlImage;
+  //   final String title;
 
-    const CircleItem({
-      required this.urlImage,
-      required this.title,
-    });
+  //   const CircleItem({
+  //     required this.urlImage,
+  //     required this.title,
+  //   });
 
     
-  }
+  // }
 class CarsOverviewScreen extends StatelessWidget {
   // const ({ Key? key }) : super(key: key);
   
@@ -52,47 +56,17 @@ class CarsOverviewScreen extends StatelessWidget {
       title: 'Categoryy',
     ),
   ];
-  // List<CircleItem> itemss =[
-  //   CircleItem(
-  //     urlImage:
-  //       'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
-  //     title: 'Categoryy',
-  //   ),
-  //   CircleItem(
-  //     urlImage:
-  //       'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
-  //     title: 'Categoryy',
-  //   ),
-  //   CircleItem(
-  //     urlImage:
-  //       'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
-  //     title: 'Categoryy',
-  //   ),
-  //   CircleItem(
-  //     urlImage:
-  //       'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
-  //     title: 'Categoryy',
-  //   ),
-  // ];
 
   @override
   Widget build(BuildContext context) {
     final List<String> imgList = [
-  'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
-  'https://images.unsplash.com/photo-1522205408450-add114ad53fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=368f45b0888aeb0b7b08e3a1084d3ede&auto=format&fit=crop&w=1950&q=80',
-  'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=94a1e718d89ca60a6337a6008341ca50&auto=format&fit=crop&w=1950&q=80',
-  'https://images.unsplash.com/photo-1523205771623-e0faa4d2813d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=89719a0d55dd05e2deae4120227e6efc&auto=format&fit=crop&w=1953&q=80',
-  'https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=1352&q=80',
-  'https://images.unsplash.com/photo-1519985176271-adb1088fa94c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0c8d632e977f94e5d312d9893258f59&auto=format&fit=crop&w=1355&q=80'
+  'https://media.istockphoto.com/photos/red-generic-sedan-car-isolated-on-white-background-3d-illustration-picture-id1189903200?k=20&m=1189903200&s=612x612&w=0&h=L2bus_XVwK5_yXI08X6RaprdFKF1U9YjpN_pVYPgS0o=',
+  'https://s.aolcdn.com/commerce/autodata/images/CAC50AUC252A021001.jpg',
+  'https://assets-global.website-files.com/6047b5ff5b990938b601662f/60fec860b11715647963384a_sports%20cars.jpg',
+  'https://media.istockphoto.com/photos/generic-red-sports-car-picture-id502076126?k=20&m=502076126&s=612x612&w=0&h=kYj2sr1P0TFZcVA4NRKSTfEgvx-KhL7Zyfv96LEg-OI=',
+  'https://s3.amazonaws.com/the-drive-staging/message-editor%2F1491424994641-subaru-brz-best-cheap-sports-cars-2017.jpg',
+  'https://st.depositphotos.com/2528559/2859/i/600/depositphotos_28592441-stock-photo-blue-car-front-view.jpg'
 ];
-// List<String> circleList = [
-//   'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
-//   'https://images.unsplash.com/photo-1522205408450-add114ad53fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=368f45b0888aeb0b7b08e3a1084d3ede&auto=format&fit=crop&w=1950&q=80',
-//   'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=94a1e718d89ca60a6337a6008341ca50&auto=format&fit=crop&w=1950&q=80',
-//   'https://images.unsplash.com/photo-1523205771623-e0faa4d2813d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=89719a0d55dd05e2deae4120227e6efc&auto=format&fit=crop&w=1953&q=80',
-//   'https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=1352&q=80',
-//   'https://images.unsplash.com/photo-1519985176271-adb1088fa94c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0c8d632e977f94e5d312d9893258f59&auto=format&fit=crop&w=1355&q=80'
-// ];
 
 final List<Widget> imageSliders = imgList
     .map((item) => Container(
@@ -142,7 +116,7 @@ final List<Widget> imageSliders = imgList
         elevation: 0,
         title: Text(
           'DidiCar',style: SubHeading),
-        backgroundColor: Colors.green[400],
+        backgroundColor: Color(0xFF00512D),
         
       ),
       body:
@@ -160,25 +134,43 @@ final List<Widget> imageSliders = imgList
         items: imageSliders,
       )),
     
-          Container(
-            height: 256,
-            child: ListView.separated(
-              scrollDirection: Axis.horizontal,
-              itemCount: 6,
-              // children: [
-              //   buildCard(),
-              //   SizedBox(width: 12),
-              //   buildCard(),
-              //   SizedBox(width: 12),
-              //   buildCard(),
-              //   SizedBox(width: 12),
-              //   buildCard(),
+          // Container(
+          //   height: 256,
+          //   child: ListView.separated(
+          //     scrollDirection: Axis.horizontal,
+          //     itemCount: 6,
+          //      //children: [
+          //     //   buildCard(),
+          //     //   SizedBox(width: 12),
+          //     //   buildCard(),
+          //     //   SizedBox(width: 12),
+          //     //   buildCard(),
+          //     //   SizedBox(width: 12),
+          //     //   buildCard(),
                 
-              // ],
-              separatorBuilder: (context, _) => SizedBox(width: 12),
-              itemBuilder: (context, index) => buildCard(items: items),
-            )
-          ),
+          //     // ],
+          //     separatorBuilder: (context, _) => SizedBox(width: 12),
+          //     itemBuilder: (context, index) => buildCard(items: items),
+          //     //itemBuilder: (context, index) => buildCardd(items: items),
+          //     //required Widget (BuildContext, int) => buildCardd(items: items),
+          //   ),
+             
+          // ),
+          Padding(
+            
+          padding: const EdgeInsets.all(8.0),
+          child:  CircleListItem(),
+        ),
+
+          // Container(child: new ListView(
+          //   scrollDirection: Axis.horizontal,
+          //   shrinkWrap: true,
+          //   children: <Widget>[
+          //     CircleListItem(),
+          //     //buildCard(items: items)
+          //   ]
+
+          // )),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text('Available Cars', 
@@ -186,6 +178,7 @@ final List<Widget> imageSliders = imgList
           ),
         Padding(
           padding: const EdgeInsets.all(8.0),
+          
           child: CarsGrid(),
         )
         ],
@@ -193,34 +186,64 @@ final List<Widget> imageSliders = imgList
     );
     
   }
-  Widget buildCard({required List<CardItem> items}) => Container(
-      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
-      width: 170,
-      height: 10,
-      color: Colors.white,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              CircleAvatar( backgroundImage: NetworkImage('https://media.istockphoto.com/photos/illustration-of-generic-red-car-front-view-picture-id1145720458?k=20&m=1145720458&s=612x612&w=0&h=51ooOfUOao-3k9MJdmqsoEITBgdMQjdEdG35sczCgJs='),
-              // CircleAvatar(
-              //   radius: 30.0,
-              //   backgroundImage:
-              //       NetworkImage("${snapshot.data.hitsList[index].previewUrl}"),
-              //   backgroundColor: Colors.transparent,
-              // )
-
-              )
-            ],
-          ),
-          SizedBox(height: 4),
-          Text('Category 1',
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),)
-        ],
-      ),
+  // Widget buildCard({required List<CardItem> items}) => Container(
+    
+  //     padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+  //     width: 170,
+  //     height: 10,
+  //     color: Colors.white,
+  //     child: Column(
+  //       crossAxisAlignment: CrossAxisAlignment.start,
+  //       children: [
+  //         Row(
+  //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  //           crossAxisAlignment: CrossAxisAlignment.start,
+  //           children: [
+  //             CircleAvatar( backgroundImage: NetworkImage(
+  //               'https://media.istockphoto.com/photos/illustration-of-generic-red-car-front-view-picture-id1145720458?k=20&m=1145720458&s=612x612&w=0&h=51ooOfUOao-3k9MJdmqsoEITBgdMQjdEdG35sczCgJs='),
+              
+  //             )
+  //           ],
+  //         ),
+  //         SizedBox(height: 4),
+  //         Text('Category 1',
+  //         style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),)
+  //       ],
+        
+  //     ),
+  // );
+  // Widget buildCardd({required List<CardItem> items}) => Container(
+    
+  //     padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+  //     width: 170,
+  //     height: 10,
+  //     color: Colors.white,
+  //     child: Column(
+  //       crossAxisAlignment: CrossAxisAlignment.start,
+  //       children: [
+  //         Row(
+  //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  //           crossAxisAlignment: CrossAxisAlignment.start,
+  //           children: [
+  //             CircleAvatar( backgroundImage: NetworkImage(
+  //               'https://st.depositphotos.com/2528559/2859/i/600/depositphotos_28592441-stock-photo-blue-car-front-view.jpg'),
+              
+  //             )
+  //           ],
+  //         ),
+  //         SizedBox(height: 4),
+  //         Text('Category 2',
+  //         style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),)
+  //       ],
+        
+  //     ),
+  // );
       
-    );
-}
+    
+   
+     
+        
+        
+      
+    
+ }

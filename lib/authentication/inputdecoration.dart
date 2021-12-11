@@ -11,14 +11,14 @@ InputDecoration buildInputDecoration(IconData icons, String hinttext) {
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(25.0),
       borderSide: BorderSide(
-        color: Colors.green,
+        color: Color(0xFF00512D),
         width: 1.5,
       ),
     ),
     enabledBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(25.0),
       borderSide: BorderSide(
-        color: Colors.green,
+        color: Color(0xFF00512D),
         width: 1.5,
       ),
     ),

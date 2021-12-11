@@ -33,7 +33,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CircleAvatar(
-                  backgroundColor:Colors.green,
+                  backgroundColor:Color(0xFF00512D),
                   radius: 70,
                   child: Image.asset("assets/1.jpg"),
                 ),
@@ -153,7 +153,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   width: 400,
                   height: 50,
                   child: RaisedButton(
-                    color: Colors.green,
+                    color: Color(0xFF00512D),
                     onPressed: () {
                                    Navigator.push(
                         context,
@@ -168,7 +168,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     },
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50.0),
-                        side: BorderSide(color: Colors.green, width: 2)),
+                        side: BorderSide(color: Color(0xFF00512D), width: 2)),
                     textColor: Colors.white,
                     child: Text("Submit"),
                   ),

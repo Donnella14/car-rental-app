@@ -31,7 +31,7 @@ class _SigninScreenState extends State<SigninScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 CircleAvatar(
-                  backgroundColor:Colors.green,
+                  backgroundColor:Color(0xFF00512D),
                   radius: 50,
                   child: Image.asset("assets/1.jpg"),
                 ),
@@ -92,7 +92,7 @@ class _SigninScreenState extends State<SigninScreen> {
                   width: 400,
                   height: 50,
                   child: RaisedButton(
-                    color: Colors.green,
+                    color: Color(0xFF00512D),
                     onPressed: () {
                                    Navigator.push(
                        context,
@@ -106,10 +106,10 @@ class _SigninScreenState extends State<SigninScreen> {
                       }
                     },
                     shape: RoundedRectangleBorder(
-                      //child:Colors.green,
+                      //child:Color(0xFF00512D),
                       
                         borderRadius: BorderRadius.circular(50.0),
-                        side: BorderSide(color: Colors.green, width: 2)
+                        side: BorderSide(color: Color(0xFF00512D), width: 2)
                         ),
                     textColor: Colors.white,
                   
@@ -141,7 +141,7 @@ class _SigninScreenState extends State<SigninScreen> {
                         child: Text(
                           "Register",
                           style: TextStyle(
-                              color: Colors.green,
+                              color: Color(0xFF00512D),
                               fontWeight: FontWeight.bold),
                         ))
                   ],

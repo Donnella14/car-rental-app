@@ -22,7 +22,7 @@ class CarsGrid extends StatelessWidget {
             margin: EdgeInsets.only(top: i.isEven?0:20,bottom: i.isEven?20:0),
             decoration: BoxDecoration(
               color: Theme.of(context).primaryColor,
-              boxShadow:[BoxShadow(color: Colors.black26,blurRadius: 10,spreadRadius: 1)]
+              boxShadow:[BoxShadow(color: Color(0xFF00512D),blurRadius: 10,spreadRadius: 1)]
             ),
             child: SingleChildScrollView(
               child: Column(
