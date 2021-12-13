@@ -1,11 +1,13 @@
 import 'dart:ui';
 
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:carrentalapp/screens/bottom_nav_screen.dart';
 import 'package:carrentalapp/utils/utils.dart';
 import 'package:flutter/material.dart';
 import '../widgets/cars_grid.dart';
 import 'package:carrentalapp/widgets/circle_list_item.dart';
 //import 'package:carrentalapp/widgets/card_list_item.dart';
+import 'package:carrentalapp/screens/bottom.dart';
 
 
 
@@ -180,7 +182,55 @@ final List<Widget> imageSliders = imgList
           padding: const EdgeInsets.all(8.0),
           
           child: CarsGrid(),
-        )
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          
+          child: MyNavigationBar(),
+        ),
+      //  bottomNavigation: BottomNavigationBar(
+      //   currentIndex: _currentIndex,
+      //   type: BottomNavigationBarType.fixed,
+      //   backgroundColor:Colors.green,
+      //   selectedItemColor: Colors.white,
+      //   selectedFontSize: 20,
+      //   unselectedItemColor: Colors.white,
+        
+      //   items: [
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.home),
+      //       title: Text('Home'),
+      //       //backgroundColor: Colors.green
+      //       ),
+
+      //       BottomNavigationBarItem(
+      //       icon: Icon(Icons.search),
+      //       title: Text('Categories'),
+      //       //backgroundColor: Colors.green
+      //       ),
+
+      //       BottomNavigationBarItem(
+      //       icon: Icon(Icons.camera),
+      //       title: Text('My account'),
+      //       //backgroundColor: Colors.green
+      //       ),
+
+      //       BottomNavigationBarItem(
+      //       icon: Icon(Icons.person),
+      //       title: Text('Profile'),
+            
+      //       ),
+      //       ],
+      //       onTap: (index) {
+      //         // setState(() {
+      //         //   _currentIndex=index;
+      //         //   if (index== 3){
+      //         //     Navigator.of(context).pushNamed('/profile');
+      //         //   }
+      //         // });
+      //       },
+      //       ),
+   
         ],
       ),
     );
