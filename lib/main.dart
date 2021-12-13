@@ -1,8 +1,8 @@
 import 'package:carrentalapp/authentication/registration.dart';
-import 'package:carrentalapp/screens/login.dart';
+import 'package:carrentalapp/screens/landingPage.dart';
 import 'package:flutter/material.dart';
 import 'screens/cars_overview.dart';
-import 'screens/login.dart';
+import 'screens/landingPage.dart';
 import 'package:carrentalapp/screens/signup.dart';
 // import 'package:carrentalapp/widgets/circle_list_item.dart';
 // import 'package:carrentalapp/widgets/card_list_item.dart';

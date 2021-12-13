@@ -172,6 +172,35 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     textColor: Colors.white,
                     child: Text("Submit"),
                   ),
+                  
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                SizedBox(
+                  width: 400,
+                  height: 50,
+                  child: RaisedButton(
+                    color: Color(0xFF558771),
+                    onPressed: () {
+                                   Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SigninScreen()),
+                      );
+                      if (_formkey.currentState!.validate()) {
+                        RegistrationUser();
+                        print("Successful");
+                      } else {
+                        print("Unsuccessfull");
+                      }
+                    },
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50.0),
+                        side: BorderSide(color: Color(0xFF00512D), width: 2)),
+                    textColor: Colors.white,
+                    child: Text("Login"),
+                  ),
+                  
                 )
               ],
             ),

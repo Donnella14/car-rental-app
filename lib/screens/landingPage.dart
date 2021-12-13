@@ -8,11 +8,13 @@
 // // import 'profile.dart';
 
 // // void main() {
-// //   runApp(const Login());
+// //   runApp(const LandingPage
+// //());
 // // }
 
-// class Login extends StatelessWidget {
-//   const Login({Key? key}) : super(key: key);
+// class LandingPage extends StatelessWidget {
+//   const LandingPage
+// ({Key? key}) : super(key: key);
 
 //   // This widget is the root of your application.
 //   @override
@@ -90,71 +92,71 @@
 //                 Container(
 //                   padding: EdgeInsets.fromLTRB(15.0, 200.0, 0.0, 0.0),
 //                   child: Text(
-//                     'SIGNIN',
+//                     'Welcome',
 //                     style: TextStyle(
 //                       fontSize: 80.0, fontWeight: FontWeight.bold
 //                     ),
 //                   ),
-//                 ),
-//                 Container(
-//                   padding: EdgeInsets.fromLTRB(270.0, 200.0, 0.0, 0.0),
-//                   child: Text(
-//                     '.',
-//                     style: TextStyle(
-//                       fontSize: 80.0, fontWeight: FontWeight.bold, color: Colors.green
-//                     ),
-//                   ),
-//                 )
-//               ],
-//             ),
-//           ),
-//           Container(
-//             padding: EdgeInsets.only(top: 35.0, left: 20.0, right: 20.0),
-//             child: Column(
-//               children: <Widget>[
-//                 TextField(
-//                   decoration: InputDecoration(
-//                     labelText: 'EMAIL',
-//                     labelStyle: TextStyle(
-//                       fontFamily: 'Montserrat',
-//                       fontWeight: FontWeight.bold,
-//                       color: Colors.grey
-//                     ),
-//                     focusedBorder: UnderlineInputBorder(
-//                       borderSide: BorderSide(color: Colors.green)
-//                     )
-//                   ),
-//                 ),
-//                 SizedBox(height: 20.0),
-//                 TextField(
-//                   decoration: InputDecoration(
-//                     labelText: 'PASSWORD',
-//                     labelStyle: TextStyle(
-//                       fontFamily: 'Montserrat',
-//                       fontWeight: FontWeight.bold,
-//                       color: Colors.grey
-//                     ),
-//                     focusedBorder: UnderlineInputBorder(
-//                       borderSide: BorderSide(color: Colors.green)
-//                     )
-//                   ),
-//                   obscureText: true,
-//                 ),
-//                 SizedBox(height: 5.0),
-//                 Container(
-//                   alignment: Alignment(1.0, 0.0),
-//                   padding: EdgeInsets.only(top: 15.0,left: 20.0),
-//                   child: InkWell(
-//                     child: Text('Forgot password',
-//                     style: TextStyle(
-//                       color: Colors.green,
-//                       fontWeight: FontWeight.bold,
-//                       fontFamily: 'Montserrat',
-//                       decoration:TextDecoration.underline
-//                     ),
-//                     ),
-//                   ),
-//                 ),
+//                  ),
+//           //       Container(
+//           //         padding: EdgeInsets.fromLTRB(270.0, 200.0, 0.0, 0.0),
+//           //         child: Text(
+//           //           '.',
+//           //           style: TextStyle(
+//           //             fontSize: 80.0, fontWeight: FontWeight.bold, color: Colors.green
+//           //           ),
+//           //         ),
+//           //       )
+//           //     ],
+//           //   ),
+//           // ),
+//           // Container(
+//           //   padding: EdgeInsets.only(top: 35.0, left: 20.0, right: 20.0),
+//           //   child: Column(
+//           //     children: <Widget>[
+//           //       TextField(
+//           //         decoration: InputDecoration(
+//           //           labelText: 'EMAIL',
+//           //           labelStyle: TextStyle(
+//           //             fontFamily: 'Montserrat',
+//           //             fontWeight: FontWeight.bold,
+//           //             color: Colors.grey
+//           //           ),
+//           //           focusedBorder: UnderlineInputBorder(
+//           //             borderSide: BorderSide(color: Colors.green)
+//           //           )
+//           //         ),
+//           //       ),
+//           //       SizedBox(height: 20.0),
+//           //       TextField(
+//           //         decoration: InputDecoration(
+//           //           labelText: 'PASSWORD',
+//           //           labelStyle: TextStyle(
+//           //             fontFamily: 'Montserrat',
+//           //             fontWeight: FontWeight.bold,
+//           //             color: Colors.grey
+//           //           ),
+//           //           focusedBorder: UnderlineInputBorder(
+//           //             borderSide: BorderSide(color: Colors.green)
+//           //           )
+//           //         ),
+//           //         obscureText: true,
+//           //       ),
+//           //       SizedBox(height: 5.0),
+//           //       Container(
+//           //         alignment: Alignment(1.0, 0.0),
+//           //         padding: EdgeInsets.only(top: 15.0,left: 20.0),
+//           //         child: InkWell(
+//           //           child: Text('Forgot password',
+//           //           style: TextStyle(
+//           //             color: Colors.green,
+//           //             fontWeight: FontWeight.bold,
+//           //             fontFamily: 'Montserrat',
+//           //             decoration:TextDecoration.underline
+//           //           ),
+//           //           ),
+//           //         ),
+//           //       ),
 //                 SizedBox(height: 40.0),
 //                 Container(
 //                   height: 40.0,
@@ -168,7 +170,7 @@
 //                         Navigator.of(context).pushNamed('/cars');
 //                       },
 //                       child: Center(
-//                         child: Text('LOGIN',
+//                         child: Text('LandingPage',
 //                         style: TextStyle(
 //                           color: Colors.white,
 //                           fontWeight: FontWeight.bold,
