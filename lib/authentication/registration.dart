@@ -35,7 +35,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 CircleAvatar(
                   backgroundColor:Color(0xFF00512D),
                   radius: 70,
-                  child: Image.asset("assets/1.jpg"),
+                  child: Image.asset("assets/logo.png"),
                 ),
                 SizedBox(
                   height: 15,
