@@ -33,9 +33,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CircleAvatar(
+
                   backgroundColor:Colors.white,
                   radius: 80,
                   child: Image.asset("assets/logoname.png"),
+
                 ),
                 // SizedBox(
                 //   height: 0,

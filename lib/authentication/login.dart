@@ -31,10 +31,11 @@ class _SigninScreenState extends State<SigninScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 CircleAvatar(
+
                   backgroundColor:Colors.white,
                   radius: 100,
                   child: Image.asset("assets/logoname.png"),
-                ),
+
                 SizedBox(
                   height: 15,
                 ),
