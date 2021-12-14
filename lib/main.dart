@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'screens/cars_overview.dart';
 import 'screens/landingPage.dart';
 import 'package:carrentalapp/screens/signup.dart';
+import 'package:carrentalapp/07_profile/body.dart';
 // import 'package:carrentalapp/widgets/circle_list_item.dart';
 // import 'package:carrentalapp/widgets/card_list_item.dart';
 
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
         '/cars': (BuildContext context) => new CarsOverviewScreen(),
         // '/signup': (BuildContext context) => new SignupPage(),
         '/main': (BuildContext context) => new MyApp(),
+        '/body': (BuildContext context) => new Body(),
 
       },
       

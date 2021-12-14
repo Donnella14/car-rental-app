@@ -31,9 +31,9 @@ class _SigninScreenState extends State<SigninScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 CircleAvatar(
-                  backgroundColor:Color(0xFF00512D),
-                  radius: 50,
-                  child: Image.asset("assets/1.jpg"),
+                  backgroundColor:Colors.white,
+                  radius: 100,
+                  child: Image.asset("assets/logoname.png"),
                 ),
                 SizedBox(
                   height: 15,
@@ -45,7 +45,7 @@ class _SigninScreenState extends State<SigninScreen> {
                       'Login',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          color: Color.fromRGBO(78, 53, 43, 1.0),
+                          color: Colors.black,
                           fontSize: 40.0,
                           fontWeight: FontWeight.w300),
                     ),

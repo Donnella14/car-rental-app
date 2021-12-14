@@ -62,7 +62,8 @@ class _MyNavigationBarState extends State<MyNavigationBar > {
             title: Text('Categories'),  
             backgroundColor: Color(0xFF00512D)  
           ),  
-          BottomNavigationBarItem(  
+           BottomNavigationBarItem( 
+            //onTap:Body(), 
             
             icon: Icon(Icons.account_box),  
             title: Text('My Acccount'),  
@@ -77,7 +78,8 @@ class _MyNavigationBarState extends State<MyNavigationBar > {
         //onTap: _onItemTapped,  
         elevation: 5,
         //recognizer: TapGestureRecognizer()..onTap = () {
-         onTap: (index) {
+        
+         onTap:(index) {
               setState(() {
                 _selectedIndex=index;
                 if (index== 2){
@@ -85,7 +87,7 @@ class _MyNavigationBarState extends State<MyNavigationBar > {
                 }
               });
             },
-      ); 
-    
+         );
+     
   }  
 }  

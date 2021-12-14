@@ -6,9 +6,9 @@ class ChangePassword extends StatelessWidget {
   Widget build(BuildContext context) {
    
     return Scaffold(
-           backgroundColor:  Color(0xFFF282d36),
+           backgroundColor:  Colors.white,
       appBar: AppBar(
-        backgroundColor:  Color(0xFFF282d36),
+        backgroundColor:  Color(0xFFF00512D),
          centerTitle: true,
         title: Text("change Password"),
       ),
@@ -99,7 +99,7 @@ class ChangePassword extends StatelessWidget {
                   height: 50,
                   
                   child: RaisedButton(
-                    color:const Color(0xff313a4a),
+                    color:const Color(0xFF00512D),
                     onPressed: () {},
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50.0),

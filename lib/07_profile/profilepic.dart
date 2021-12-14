@@ -7,14 +7,15 @@ class ProfilePic extends StatelessWidget {
     return Column(
       children: [
         SizedBox(
-            height: 115,
-            width: 115,
-            child: Stack(
-              fit: StackFit.expand, children: [
+            height: 300,
+            width: 400,
+            child: //Stack(
+              //fit: StackFit.expand, children: [
               CircleAvatar(
                   
                 
-                   backgroundImage: AssetImage("assets/images/sam.jpg"),
+                   backgroundImage: AssetImage("assets/logoname.png"),
+                   //radius: 100,
               ),  
               // const Center(
               //         child: Text(
@@ -39,8 +40,8 @@ class ProfilePic extends StatelessWidget {
               //           ),
               //         ),
             
-            ]))
-      ],
-    );
-  }
-}
+           // ]))
+     // ],
+    )]);
+  
+}}
