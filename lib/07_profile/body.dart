@@ -1,6 +1,8 @@
 import 'package:carrentalapp/07_profile/changepassword.dart';
 import 'package:carrentalapp/authentication/login.dart';
 import 'package:flutter/material.dart';
+import 'package:carrentalapp/07_profile/compliteprofile.dart';
+import 'package:carrentalapp/07_profile/profilepic.dart';
 // import 'package:ui/07_profile/changepassword.dart';
 // import 'package:ui/Authentication/login.dart';
 
@@ -18,19 +20,20 @@ class Body extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         CircleAvatar(
-          radius: 70,
-          child: Image.asset("assets/images/1.jpg"),
+          backgroundColor: Colors.white,
+          radius: 100,
+          child: Image.asset("assets/logoname.png"),
         ),
         const SizedBox(
           height: 15,
         ),
         const Center(
           child: Text(
-            'Mentor',
+            'Amandine',
             textAlign: TextAlign.center,
             style: TextStyle(
-                color: Colors.white,
-                fontSize: 20.0,
+                color: Colors.black,
+                fontSize: 35.0,
                 fontWeight: FontWeight.w300),
           ),
         ),
@@ -38,11 +41,11 @@ class Body extends StatelessWidget {
           // child: Padding(
           // padding: EdgeInsets.only(top: 40.0,bottom: 40.0),
           child: Text(
-            '0783845574.@Mentor',
+            'mugishadonnella14@gmail.com',
             textAlign: TextAlign.center,
             style: TextStyle(
-                color: Colors.white,
-                fontSize: 10.0,
+                color: Colors.black,
+                fontSize: 15.0,
                 fontWeight: FontWeight.w300),
           ),
         ),
@@ -51,8 +54,9 @@ class Body extends StatelessWidget {
           child: FlatButton(
             padding: EdgeInsets.all(20),
             shape: RoundedRectangleBorder(),
-           color: Color(0xff313a4a),
-            onPressed: () {},
+           color: Color(0xFF00512D),
+            onPressed: () {Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => ProfilePic()));},
             child: Row(
               children: [
                 Icon(
@@ -65,7 +69,7 @@ class Body extends StatelessWidget {
                     child: Text(
                   "Update Profile",
                   style: TextStyle(
-                    color: Color(0xFFF5F6F9),
+                    color: Colors.white,
                   ),
                 )),
                             Icon(
@@ -81,7 +85,7 @@ class Body extends StatelessWidget {
           child: FlatButton(
             padding: EdgeInsets.all(20),
             shape: RoundedRectangleBorder(),
-            color: Color(0xff313a4a),
+            color: Color(0xFF00512D),
             onPressed: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => ChangePassword()));
@@ -97,7 +101,7 @@ class Body extends StatelessWidget {
                 Expanded(
                     child: Text("Change password",
                         style: TextStyle(
-                          color: Color(0xFFF5F6F9),
+                          color: Colors.white,
                         ))),
                          
                 Icon(
@@ -114,7 +118,7 @@ class Body extends StatelessWidget {
           child: FlatButton(
             padding: EdgeInsets.all(20),
             shape: RoundedRectangleBorder(),
-            color: Color(0xff313a4a),
+            color: Color(0xFF00512D),
             onPressed: () {
               Navigator.push(
                 context,
@@ -132,7 +136,7 @@ class Body extends StatelessWidget {
                 Expanded(
                     child: Text("Signout",
                         style: TextStyle(
-                          color: Color(0xFFF5F6F9),
+                          color: Colors.white,
                         ))),
                           
                 Icon(
@@ -148,7 +152,7 @@ class Body extends StatelessWidget {
           child: FlatButton(
             padding: EdgeInsets.all(20),
             shape: RoundedRectangleBorder(),
-            color: Color(0xff313a4a),
+            color: Color(0xFF00512D),
             onPressed: () {},
             child: Row(
               children: [
@@ -161,7 +165,7 @@ class Body extends StatelessWidget {
                 Expanded(
                     child: Text("Delete account",
                         style: TextStyle(
-                          color: Color(0xFFF5F6F9),
+                          color: Colors.white,
                         ))),
           
                 Icon(

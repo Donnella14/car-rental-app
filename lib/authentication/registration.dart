@@ -33,12 +33,27 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CircleAvatar(
-                  backgroundColor:Color(0xFF00512D),
-                  radius: 70,
-                  child: Image.asset("assets/logo.png"),
+
+                  backgroundColor:Colors.white,
+                  radius: 80,
+                  child: Image.asset("assets/logoname.png"),
+
                 ),
-                SizedBox(
-                  height: 15,
+                // SizedBox(
+                //   height: 0,
+                // ),
+                const Center(
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 20.0, bottom: 20.0),
+                    child: Text(
+                      'Register',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 35.0,
+                          fontWeight: FontWeight.w300),
+                    ),
+                  ),
                 ),
                 Padding(
                   padding:
