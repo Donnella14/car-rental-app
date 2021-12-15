@@ -15,6 +15,7 @@ class ChangePassword extends StatelessWidget {
         body: ListView(children: <Widget>[
       
           Container(
+             
              margin: EdgeInsets.only(top: 10.0, bottom: 10.0, right: 20.0, left: 20.0),
                   padding:
                       EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
@@ -22,12 +23,14 @@ class ChangePassword extends StatelessWidget {
               decoration: kBoxDecorationStyle,
               height: 60.0,
               child: TextField(
+                
                 keyboardType: TextInputType.emailAddress,
                 style: TextStyle(
                   color: Colors.white,
                   fontFamily: 'OpenSans',
                 ),
                 decoration: InputDecoration(
+                 
                   border: InputBorder.none,
                   contentPadding: EdgeInsets.only(top: 14.0),
                   prefixIcon: Icon(
@@ -36,7 +39,9 @@ class ChangePassword extends StatelessWidget {
                   ),
                   hintText: 'Enter your Current Password',
                   hintStyle: kHintTextStyle,
+                  
                 ),
+                
               ),
             ),
         
