@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:carrentalapp/utils/utils.dart';
 import '../models/cars.dart';
 
-class CarsGrid extends StatelessWidget {
+class Carsgrid extends StatelessWidget {
   //const ({ Key? key }) : super(key: key);
 
   @override
@@ -35,7 +35,7 @@ class CarsGrid extends StatelessWidget {
                   ),
                   Text((allCars.cars[i].price).toString(),
                   style: SubHeading),
-                  Text('per month')
+                  Text('per month ')
                 ],
               ),
             ),

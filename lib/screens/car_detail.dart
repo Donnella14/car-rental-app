@@ -1,6 +1,8 @@
 import 'package:carrentalapp/utils/utils.dart';
 import 'package:flutter/material.dart';
 import '../widgets/specific_card.dart';
+import 'package:carrentalapp/main.dart';
+import 'package:carrentalapp/screens/booking.dart';
 
 class CarDetail extends StatelessWidget {
   final String title;
@@ -97,7 +99,10 @@ class CarDetail extends StatelessWidget {
             RaisedButton(
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
               disabledColor: Theme.of(context).accentColor,
-              onPressed: null,child: Text('Book Now',style: TextStyle(fontSize:20,color: Colors.white))
+              onPressed: () => {Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => SignupPage()),
+  )},child: Text('Book Now',style: TextStyle(fontSize:20,color: Colors.white))
               )
             
         ],
