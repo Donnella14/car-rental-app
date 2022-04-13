@@ -5,6 +5,7 @@ import 'package:carrentalapp/screens/bottom_nav_screen.dart';
 import 'package:carrentalapp/utils/utils.dart';
 import 'package:flutter/material.dart';
 import '../widgets/cars_grid.dart';
+import 'package:carrentalapp/utils/constants.dart';
 import 'package:carrentalapp/widgets/circle_list_item.dart';
 //import 'package:carrentalapp/widgets/card_list_item.dart';
 import 'package:carrentalapp/screens/bottom.dart';
@@ -178,10 +179,42 @@ final List<Widget> imageSliders = imgList
             child: Text('Available Cars', 
         style: MainHeading),
           ),
+//         Padding(
+//           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+//           child: FlatButton(
+//             padding: EdgeInsets.all(20),
+//             shape: RoundedRectangleBorder(),
+//            color: Color(0xFF00512D),
+//             onPressed: () {//Navigator.push(context,
+//                 //  MaterialPageRoute(builder: (context) => ProfilePic()));
+//                 },
+//             child: Row(
+//               children: [
+//                 Icon(
+//                   Icons.person,
+//                   color: Colors.white,
+//                   size: 30.0,
+//                 ),
+//                 SizedBox(width: 20),
+//                 Expanded(
+//                     child: Text(
+//                   "Update Profile",
+//                   style: TextStyle(
+//                     color: Colors.white,
+//                   ),
+//                 )),
+//                             Icon(
+//   Icons.arrow_forward_ios,
+//   color: Colors.white,
+// )
+//               ],
+//             ),
+//           ),
+//         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
           
-          child: CarsGrid(),
+          child: Carsgrid(),
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),

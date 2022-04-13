@@ -102,7 +102,7 @@ Widget _buildCircleImage1(){
 }
 
 Widget _buildText1(){
-  return Text('category 1',
+  return Text('SUV',
   style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
   );
 }
@@ -137,7 +137,7 @@ Widget _buildCircleImage2(){
 }
 
 Widget _buildText2(){
-  return Text('category 2',
+  return Text('Sedan',
   style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
   );
 }
@@ -172,7 +172,7 @@ Widget _buildCircleImage3(){
 }
 
 Widget _buildText3(){
-  return Text('category 3',
+  return Text('MUV',
   style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
   );
 }
@@ -208,7 +208,7 @@ Widget _buildCircleImage4(){
 }
 
 Widget _buildText4(){
-  return Text('category 4',
+  return Text('Coupe',
   style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
   );
 }
@@ -243,7 +243,7 @@ Widget _buildCircleImage5(){
 }
 
 Widget _buildText5(){
-  return Text('category 5',
+  return Text('Convertible',
   style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
   );
 }
@@ -278,7 +278,7 @@ Widget _buildCircleImage6(){
 }
 
 Widget _buildText6(){
-  return Text('category 6',
+  return Text('Hatchback',
   style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
   );
 }
